@@ -7,34 +7,33 @@ public class PIRÁMIDES {
         Scanner sc2 = new Scanner(System.in);
 
 
-        int num = 4;
+        int num;
         System.out.println("Introduce el tamaño de la pirámide");
         num = sc2.nextInt();
-
 
 
         //VA DENTRO DE ESTE FOR, PIRAMIDE ASCENDENTE
         for (int i = 1; i <= num; i++) {
 
 
-            //ESTE ES PARA QUE SEA CENTRADO
+            /*//ESTE ES PARA QUE SEA CENTRADO
             for (int e = num; e > i; e--) {
                 System.out.print(" ");
-            }
+            }*/
 
 
             //LA FIGURA QUE QUIERES IMPRIMIR
             for (int j = i; j >= 1; j--) {
-                System.out.print("* ");
-            }
+                    System.out.print("* ");
 
+            }
 
             //PARA QUE HAGA EL SALTO Y QUE LOS ASTERISCOS HAGAN LA PIRAMIDE
             System.out.println();
         }
 
 
-
+/*
         //EMPIEZA A HACER LA PIRAMIDE DESCENDENTE
         for (int i = num; i >= 1; i--) {
 
@@ -87,11 +86,15 @@ public class PIRÁMIDES {
 
             //PARA QUE HAGA LA FORMA DE LA PIRAMIDE
             System.out.println();
+
+
         }
+ */
 
     }
-
 }
+
+
 
 
 
