@@ -25,7 +25,21 @@ public class Ej_18 {
 
         switch(signo){
             case 'A':
-                System.out.println("Perímetro del triángulo es: "+Math.);
+                double hip=Math.hypot(num_1,num_2);
+                double per=hip+num_1+num_2;
+                System.out.println("Perímetro del triángulo es: "+per);
+                break;
+            case 'B':
+                System.out.println("El área del rectángulo es: "+num_1*num_2);
+                break;
+            case 'C':
+                System.out.println("El área del triángulo es: "+((num_1*num_2)/2));
+                break;
+            case 'D':
+                System.out.println("La hipotenusa del tríangulo es: "+Math.hypot(num_1,num_2));
+                break;
+
+
         }
 
 
