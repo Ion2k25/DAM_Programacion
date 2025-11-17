@@ -6,6 +6,10 @@ public class Strings {
         System.out.println("Introduce una frase");
         String frase =sc.nextLine();
 
+        System.out.println(frase);
+
+
+
 
 
 
