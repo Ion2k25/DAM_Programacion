@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Problema_1 {
     static void main(String[] args) throws IOException {
 
+                                             /*FINALIZADO*/
+
+
+
         /*
 
         Los alumno de 1DAM  del IES Francisco de Quevedo son los encargados de la gestión de la OFicina de Correos del distrito de San Blas.

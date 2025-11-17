@@ -24,7 +24,7 @@ public class Problema_2 {
 
         Scanner sc=new Scanner(System.in);
         int i;
-        System.out.println("Introduce varios numeros \nIntroduce numero NEGATIVO para finalizar programa");
+        System.out.println("\nIntroduce varios numeros \nNEGATIVO para finalizar programa");
         do {
 
             i = sc.nextInt();
