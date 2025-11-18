@@ -1,7 +1,10 @@
 package EXAMEN_2;
 
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Scanner;
 public class Problema_1 {
-    static void main(String[] args) {
+    static void main(String[] args) throws IOException {
         /*
         Programa que muestre un menú al usuario en el que le permita elegir entre las siguientes opciones:
 
@@ -28,5 +31,45 @@ public class Problema_1 {
         d.  Salir
 
          */
+
+        Scanner sc = new Scanner(System.in);
+        InputStreamReader lector = new InputStreamReader(System.in);
+
+        System.out.println("+---------------+\n| MENU OPCIONES |\n+---------------+\n a.Ascensor\n b.Amigos\n c.Larga\n d.Salir");
+        char opcion = (char) lector.read();
+        opcion = Character.toUpperCase(opcion);
+
+
+        switch (opcion) {
+            case 'A':
+                System.out.println("S -> Subir?\nB -> Bajar?");
+                char p = sc.next().toUpperCase().charAt(0); //Esta es la unica manera para que no salga error, porque se mezcla el Scanner con el InputStreamReader
+
+
+                switch (p) {
+                    case 'S':
+                        /*do {
+                            System.out.println("\nPlanta actual?");
+                            int actual = sc.nextInt();
+                            System.out.println("Planta destino?");
+                            int destino = sc.nextInt();
+
+
+                            if (actual <= destino) {
+                                for (int i = actual; i <= destino; i++) {
+                                    System.out.println("Subiendo..." + i);
+                                }
+                            }
+                        }*/
+                        System.out.println("Destino es menor que actual. Vuelve a introducir");
+
+
+                        break;
+                    case 'B':
+
+                        break;
+                }
+        }
+
     }
 }
